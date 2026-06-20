@@ -3,38 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- SEO básico -->
+    <meta name="description"
+        content="Criamos sites, landing pages e sistemas web modernos com foco em performance, design e conversão.">
+    <meta name="keywords" content="desenvolvimento web, landing page, UI UX, sistemas web, frontend, MockyCode">
+    <meta name="author" content="MockyCode">
+
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSRAP -->
+
+    <!-- TÍTULO -->
+    <title>MockyCode | Desenvolvimento Web, UI/UX e Sistemas</title>
+
+    <!-- FAVICON (corrigido) -->
+    <link rel="icon" href="public/app/assets/logo/logo-mockycode.svg" type="image/svg+xml">
+
+    <!-- OG IMAGE (preview WhatsApp / redes sociais) -->
+    <meta property="og:title" content="MockyCode | Desenvolvimento Web">
+    <meta property="og:description"
+        content="Sites modernos, sistemas e UX/UI de alto nível com foco em performance e conversão.">
+    <meta property="og:image" content="https://seudominio.com/public/app/assets/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com">
+
+    <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="public/src/css/global/reset.css">
     <link rel="stylesheet" href="public/src/css/views/index.css">
+
+    <!-- JS -->
     <script src="public/src/js/effects/scroll.js" defer></script>
     <script src="public/src/js/effects/contador.js" defer></script>
     <script src="public/src/js/effects/animation.js" defer></script>
     <script src="public/src/js/components/menumobi.js" defer></script>
-    <title>Mockycode</title>
+    <script src="public/src/js/effects/card.js" defer></script>
+    <script src="public/src/js/components/cookies.js" defer></script>
+    <script src="public/src/js/components/server.js" defer></script>
+    <script src="public/src/js/components/chtabot-ui.js" defer></script>
 </head>
 
 <body>
-   <nav class="nav-bar">
 
-    <div class="logo">
-        <img src="public/app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+    <div class="cookies-overlay" id="cookies-overlay">
     </div>
 
-    <div class="nav-list">
+    <div class="cookies-msg" id="cookies-msg">
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
+        <div class="cookies-card">
 
-        <div class="mobile-actions">
+            <div class="cookies-icon">🍪</div>
 
+            <div class="cookies-content">
+                <h3>Usamos cookies</h3>
+                <p>
+                    Usamos cookies para melhorar sua experiência, analisar tráfego e personalizar conteúdo.
+                </p>
+
+                <div class="cookies-btn">
+                    <button class="aceitar" onclick="aceito()">Aceitar</button>
+                    <button class="rejeitar" onclick="rejeitar()">Rejeitar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="nav-bar">
+
+        <div class="logo">
+            <img src="public/app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+        </div>
+
+        <div class="nav-list">
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+
+            <div class="mobile-actions">
+
+                <a href="#" class="btn-loja">
+                    <i class="bi bi-bag-check-fill"></i>
+                </a>
+
+                <a href="#contact" class="btn-contato-menu">
+                    Solicitar Orçamento
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="nav-actions">
             <a href="#" class="btn-loja">
                 <i class="bi bi-bag-check-fill"></i>
             </a>
@@ -42,26 +110,13 @@
             <a href="#contact" class="btn-contato-menu">
                 Solicitar Orçamento
             </a>
-
         </div>
 
-    </div>
+        <div class="mobile-menu-btn">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+        </div>
 
-    <div class="nav-actions">
-        <a href="#" class="btn-loja">
-            <i class="bi bi-bag-check-fill"></i>
-        </a>
-
-        <a href="#contact" class="btn-contato-menu">
-            Solicitar Orçamento
-        </a>
-    </div>
-
-    <div class="mobile-menu-btn">
-      <i class="bi bi-grid-3x3-gap-fill"></i>
-    </div>
-
-</nav>
+    </nav>
 
     <main id="home">
         <div class="hero-content">
@@ -104,7 +159,7 @@
 
         <div class="stat-box">
             <h3 class="counter" data-target="5">0</h3>
-            <p>Experiência digitail</p>
+            <p>Experiência digital</p>
         </div>
 
         <div class="stat-box">
@@ -114,7 +169,16 @@
 
     </div>
 
-    <section class="services">
+    <section class="problem">
+        <h2>Seu site pode estar te fazendo perder clientes</h2>
+
+        <p>
+            Muitos negócios ainda usam sites lentos, desatualizados ou sem foco em conversão.
+            Isso reduz vendas e credibilidade todos os dias.
+        </p>
+    </section>
+
+    <section class="services" id="services">
         <div class="section-title">
             <span>Nossos Serviços</span>
             <h2>Soluções digitais para sua empresa crescer.</h2>
@@ -164,9 +228,106 @@
         </div>
     </section>
 
+    <section class="about" id="about">
+
+        <h2>Quem Somos</h2>
+
+        <span class="section-badge">
+            SOBRE A MOCKYCODE
+        </span>
+
+        <p>
+            A MockyCode é especializada em desenvolvimento web, design e soluções digitais que ajudam empresas a crescer
+            através da tecnologia.
+        </p>
+
+        <a href="about.html" class="btn-about">
+            Conheça nossa história
+        </a>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <!-- TÍTULO DA SEÇÃO -->
+        <div class="section-title">
+            <span>Portfólio</span>
+            <h2>Projetos que transformam ideias em resultados</h2>
+            <p>
+                Criamos experiências digitais que unem estética, performance e resultado..
+            </p>
+        </div>
+
+        <!-- GRID DOS CARDS -->
+        <div class="portfolio-grid">
+
+            <div class="card-portfolio">
+                <div class="img-box">
+                    <img src="public/app/assets/images/lndingpage.jpg" alt="Landing Pages">
+                </div>
+
+                <div class="content">
+                    <h2>Landing Pages</h2>
+                    <p>
+                        Páginas estratégicas focadas em conversão, vendas e captação de leads com alto desempenho.
+                    </p>
+
+                    <a href="#" class="read-more">Ver projetos</a>
+                </div>
+            </div>
+
+            <div class="card-portfolio">
+                <div class="img-box">
+                    <img src="public/app/assets/images/desh.jpg" alt="Sistemas Web">
+                </div>
+
+                <div class="content">
+                    <h2>Sistemas Web</h2>
+                    <p>
+                        Dashboards e sistemas inteligentes para gestão, automação e controle de dados em tempo real.
+                    </p>
+
+                    <a href="#" class="read-more">Ver projetos</a>
+                </div>
+            </div>
+
+            <div class="card-portfolio">
+                <div class="img-box">
+                    <img src="public/app/assets/images/mobile.jpg" alt="Aplicativos Mobile">
+                </div>
+
+                <div class="content">
+                    <h2>Aplicativos Mobile</h2>
+                    <p>
+                        Aplicativos modernos, rápidos e intuitivos com foco em experiência e performance.
+                    </p>
+
+                    <a href="#" class="read-more">Ver projetos</a>
+                </div>
+            </div>
+
+            <div class="card-portfolio">
+                <div class="img-box">
+                    <img src="public/app/assets/images/ux.jpg" alt="UX/UI Design">
+                </div>
+
+                <div class="content">
+                    <h2>UX/UI Design</h2>
+                    <p>
+                        Criação de interfaces modernas, protótipos e experiências digitais centradas no usuário.
+                    </p>
+
+                    <a href="#" class="read-more">Ver projetos</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="cta">
         <h2>Seu projeto começa agora</h2>
-        <p>Criamos seu site ou sistema com foco em resultado real.</p>
+        <p>Sites, sistemas, aplicativos e soluções digitais desenvolvidas para gerar resultados reais para sua empresa.
+        </p>
 
         <a href="#" class="btn-cta">Falar com um especialista</a>
     </section>
@@ -194,22 +355,23 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <div id="footer-content">
             <div id="footer-contacts">
-                <img src="public/app/assets/logo/logo-mockycode.svg" alt="">
+                <img src="public/app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
                 <p>Tecnologia Design e inovação para empresas.</p>
 
                 <div id="footer-social-midia">
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="https://www.instagram.com/mockycode?igsh=M2VqNDFxdDEwenho" target="_blank"
+                        class="footer-link" id="instagram">
                         <i class="bi bi-instagram"></i>
                     </a>
 
-                    <a href="#" class="footer-link" id="github">
+                    <a href="https://github.com/Brunobarbosa-Tech" target="_blank" class="footer-link" id="github">
                         <i class="bi bi-github icon-black"></i>
                     </a>
 
-                    <a href="#" class="footer-link" id="whatsapp">
+                    <a href="https://wa.me/5511987100570" target="_blank" class="footer-link" id="whatsapp">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </div>
@@ -290,6 +452,61 @@
         </div>
     </footer>
 
+    <!-- CHATBOT -->
+    <div class="chatbot-wrapper">
+
+        <!-- BOTÃO FLUTUANTE -->
+        <button class="chatbot-button" id="chatbotButton">
+
+            <i class="bi bi-chat-dots-fill"></i>
+
+        </button>
+
+        <!-- JANELA -->
+        <div class="chatbot-box" id="chatbotBox">
+
+            <!-- HEADER -->
+            <div class="chatbot-header">
+
+                <div class="chatbot-title">
+
+                    <i class="bi bi-robot"></i>
+                    <span>Assistente MockyCode</span>
+
+                </div>
+
+                <button id="closeChat">
+
+                    <i class="bi bi-x-lg"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MENSAGENS -->
+            <div class="chatbot-messages" id="chatMessages">
+            </div>
+
+            <!-- OPÇÕES DINÂMICAS -->
+            <div class="chat-options" id="chatOptions">
+            </div>
+
+            <!-- RODAPÉ -->
+            <div class="chat-footer" id="chatFooter">
+
+                <button id="restartChat">
+
+                    <i class="bi bi-arrow-clockwise"></i>
+                    Recomeçar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 
-</html
+</html>
