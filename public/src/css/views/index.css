@@ -591,11 +591,17 @@ section::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top, rgba(109, 213, 250, .12), transparent 60%),
-        radial-gradient(circle at bottom, rgba(180, 255, 102, .08), transparent 60%);
-    filter: blur(50px);
-    z-index: 0;
 
+    background:
+        radial-gradient(circle at 20% 20%,
+            rgba(109, 212, 250, .20),
+            transparent 40%),
+
+        radial-gradient(circle at 80% 80%,
+            rgba(138, 92, 246, .18),
+            transparent 40%);
+
+    z-index: 0;
 }
 
 .problem h2 {
@@ -1035,6 +1041,20 @@ section::after {
         transform: none;
         margin-top: 10px;
         width: 100%;
+    }
+
+    .problem {
+        padding: 80px 20px;
+    }
+
+    .problem h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .problem p {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 }
 
