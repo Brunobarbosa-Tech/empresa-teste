@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO básico -->
+    <meta name="description"
+        content="Criamos sites, landing pages e sistemas web modernos com foco em performance, design e conversão.">
+    <meta name="keywords" content="desenvolvimento web, landing page, UI UX, sistemas web, frontend, MockyCode">
+    <meta name="author" content="MockyCode">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MockyCode | Desenvolvimento Web, UI/UX e Sistemas</title>
+
+    <link rel="icon" href="../../app/assets/logo/logo-mockycode.svg" type="image/svg+xml">
+
+    <!-- OG IMAGE (preview WhatsApp / redes sociais) -->
+    <meta property="og:title" content="MockyCode | Desenvolvimento Web">
+    <meta property="og:description"
+        content="Sites modernos, sistemas e UX/UI de alto nível com foco em performance e conversão.">
+    <meta property="og:image" content="https://seudominio.com/public/app/assets/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/global/reset.css">
+    <link rel="stylesheet" href="../css/views/portfolio.css">
+
+    <script src="../js/components/menumobi.js" defer></script>
+    <script src="../js/components/particulas.js" defer></script>
+    <script src="../js/effects/contportfolio.js" defer></script>
+    <script src="../js/effects/processo.js" defer></script>
+    <script src="../js/effects/modal.js" defer></script>
+    <script src="../js/components/chtabot-ui.js" defer></script>
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+
+        <div class="logo">
+            <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+        </div>
+
+        <div class="nav-list">
+
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <div class="mobile-actions">
+
+                <a href="#" class="btn-loja">
+                    <i class="bi bi-bag-check-fill"></i>
+                </a>
+
+                <a href="#contact" class="btn-contato-menu">
+                    Solicitar Orçamento
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="nav-actions">
+            <a href="#" class="btn-loja">
+                <i class="bi bi-bag-check-fill"></i>
+            </a>
+
+            <a href="#contact" class="btn-contato-menu">
+                Solicitar Orçamento
+            </a>
+        </div>
+
+        <div class="mobile-menu-btn">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="interface">
+                <div class="img-hero">
+                    <img src="../../app/assets/images/robo-hero.png" alt="Robô hero">
+                </div>
+
+                <div class="txt-hero">
+                    <h1>Ideias digitais. <span>Resultado reais!</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ducimus voluptatem nulla quasi
+                        tempora totam minu.</p>
+                    <a href="#" class="btn-contato-menu">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-mim">
+            <div class="interface">
+                <div class="txt-sobre">
+                    <h1 class="titulo-section">Sobre <span>mim</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nobis repellat quo porro eius
+                        atque reprehenderit perferendis perspiciatis itaque. Reiciendis inventore earum quo quibusdam.
+                        Nemo ratione incidunt esse unde dolorem.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, neque! Voluptates corporis
+                        nemo quod autem natus tempora doloremque in officiis ipsum, libero, quo eligendi minus quia
+                        consequatur sequi, dolorem aperiam!
+                    </p>
+
+                    <div class="btn-redes">
+
+                        <a href="https://github.com/Brunobarbosa-Tech" target="_blank" class="btn github">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/br-barbosa/" target="_blank" class="btn linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/mockycode" target="_blank" class="btn instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="https://wa.me/5511987100570" target="_blank" class="btn whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="img-sobre">
+
+                    <div class="energy-field"></div>
+
+                    <div class="energy-base" id="energyBase"></div>
+
+                    <div class="caixa">
+                        <img class="img-neon" src="../../app/assets/images/perfil.png" alt="Imagem do meu perfil">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills" id="services">
+
+            <div class="interface">
+
+                <h1 class="titulo-section">
+                    Minhas <span>Especialidades</span>
+                </h1>
+
+                <div class="skills-container">
+
+                    <div class="skill-card">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Front-End</h3>
+                        <p>HTML, CSS, JavaScript e interfaces modernas.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-palette"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Criação de layouts intuitivos e responsivos.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-window"></i>
+                        <h3>Landing Pages</h3>
+                        <p>Páginas focadas em conversão e vendas.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-phone"></i>
+                        <h3>Responsividade</h3>
+                        <p>Experiência perfeita em qualquer dispositivo.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+      <section class="portfolio" id="portfolio">
+
+    <div class="interface">
+
+        <div class="section-title">
+            <span>PORTFÓLIO</span>
+            <h2>Projetos que mostram minha evolução</h2>
+            <p>
+                Cada projeto foi desenvolvido com foco em performance,
+                experiência do usuário e conversão.
+            </p>
+        </div>
+
+        <article class="portfolio-container">
+
+            <a href="#" class="portfolio-box projeto1"
+                data-img="../../app/assets/portfolio/projeto-01.png""
+                data-title="Landing Page SaaS"
+                data-cliente="Startup Alpha"
+                data-categoria="Landing Page"
+                data-tech="HTML, CSS, JavaScript"
+                data-objetivo="Conversão de leads"
+                data-desc="Projeto focado em alta performance e conversão de usuários">
+
+                <div class="infor-portfolio">Projeto 01</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto2"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="Site Institucional"
+                data-cliente="Empresa Beta"
+                data-categoria="Institucional"
+                data-tech="HTML, CSS, JavaScript"
+                data-objetivo="Presença digital profissional"
+                data-desc="Site moderno com foco em UX e responsividade">
+
+                <div class="infor-portfolio">Projeto 02</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto3"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="E-commerce UI"
+                data-cliente="Loja Gamma"
+                data-categoria="E-commerce"
+                data-tech="HTML, CSS, JS"
+                data-objetivo="Vendas online"
+                data-desc="Interface de loja virtual otimizada para conversão">
+
+                <div class="infor-portfolio">Projeto 03</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto4"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="Dashboard Admin"
+                data-cliente="SaaS Delta"
+                data-categoria="Dashboard"
+                data-tech="HTML, CSS, JavaScript"
+                data-objetivo="Gestão de dados"
+                data-desc="Painel administrativo com UI moderna e intuitiva">
+
+                <div class="infor-portfolio">Projeto 04</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto5"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="App Landing Page"
+                data-cliente="Startup Epsilon"
+                data-categoria="Landing Page"
+                data-tech="HTML, CSS, JS"
+                data-objetivo="Download de app"
+                data-desc="Landing page para aplicativo mobile">
+
+                <div class="infor-portfolio">Projeto 05</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto6"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="Portfólio Criativo"
+                data-cliente="Designer Freelancer"
+                data-categoria="Portfólio"
+                data-tech="HTML, CSS, JS"
+                data-objetivo="Apresentação pessoal"
+                data-desc="Site criativo para showcase de trabalhos">
+
+                <div class="infor-portfolio">Projeto 06</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto7"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="Landing Educacional"
+                data-cliente="Curso Online"
+                data-categoria="Educação"
+                data-tech="HTML, CSS, JS"
+                data-objetivo="Captação de alunos"
+                data-desc="Landing page para venda de curso online">
+
+                <div class="infor-portfolio">Projeto 07</div>
+            </a>
+
+            <a href="#" class="portfolio-box projeto8"
+                data-img="../../app/assets/portfolio/projeto-01.png"
+                data-title="Sistema Web CRM"
+                data-cliente="Empresa SaaS"
+                data-categoria="Sistema Web"
+                data-tech="HTML, CSS, JS"
+                data-objetivo="Gestão de clientes"
+                data-desc="Sistema completo de CRM moderno">
+
+                <div class="infor-portfolio">Projeto 08</div>
+            </a>
+
+        </article>
+
+        <div class="portfolio-btn">
+            <button id="btnMore">Ver mais projetos</button>
+        </div>
+
+    </div>
+
+    <!-- =======================
+         MODAL ÚNICO (CORRETO)
+    ======================== -->
+    <div class="portfolio-modal" id="portfolioModal">
+
+        <div class="modal-content">
+
+            <span class="close-modal" id="closeModal">
+                <i class="bi bi-x-lg"></i>
+            </span>
+
+            <img id="modalImage" src="" alt="Projeto">
+
+            <div class="modal-info">
+
+                <h3 id="modalTitle"></h3>
+
+                <div id="modalCliente"></div>
+                <div id="modalCategoria"></div>
+                <div id="modalTech"></div>
+                <div id="modalObjetivo"></div>
+
+                <p id="modalDesc"></p>
+
+                <a id="modalLink" href="#" target="_blank" class="modal-btn">
+                    Acessar arquivo
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section class="numeros">
+
+            <div class="interface">
+
+                <div class="section-title">
+                    <span>RESULTADOS</span>
+                    <h2>Números que mostram minha evolução</h2>
+                    <p>
+                        Projetos entregues com foco em performance, qualidade e experiência do usuário.
+                    </p>
+                </div>
+
+                <div class="numeros-container">
+
+                    <div class="numero-card">
+                        <h3><span class="count" data-target="20">0</span> +</h3>
+                        <p>Projetos Entregues</p>
+                    </div>
+
+                    <div class="numero-card">
+                        <h3><span class="count" data-target="10">0</span> +</h3>
+                        <p>Clientes Atendidos</p>
+                    </div>
+
+                    <div class="numero-card">
+                        <h3><span class="count" data-target="100">0</span> %</h3>
+                        <p>Responsivos</p>
+                    </div>
+
+                    <div class="numero-card">
+                        <h3>A +</h3>
+                        <p>Performance</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="processo">
+
+            <div class="interface">
+
+                <div class="section-title">
+
+                    <span>PROCESSO</span>
+
+                    <h2>
+                        Como desenvolvemos cada projeto
+                    </h2>
+
+                    <p>
+                        Do planejamento à entrega, seguimos uma metodologia que une
+                        estratégia, design e tecnologia para criar experiências digitais
+                        de alto impacto.
+                    </p>
+
+                </div>
+
+                <div class="processo-container">
+                    <div class="processo-card">
+
+                        <small>01</small>
+
+                        <span class="processo-icon briefing">
+                            <i class="bi bi-chat-square-text"></i>
+                        </span>
+
+                        <h3>Briefing</h3>
+
+                        <p>
+                            Entendemos suas necessidades e objetivos.
+                        </p>
+
+                    </div>
+
+                    <div class="processo-card">
+
+                        <small>02</small>
+
+                        <span class="processo-icon design">
+                            <i class="bi bi-palette"></i>
+                        </span>
+
+                        <h3>UI/UX Design</h3>
+
+                        <p>
+                            Planejamento da experiência e interface.
+                        </p>
+
+                    </div>
+
+                    <div class="processo-card">
+
+                        <small>03</small>
+
+                        <span class="processo-icon desenvolvimento">
+                            <i class="bi bi-code-slash"></i>
+                        </span>
+
+                        <h3>Desenvolvimento</h3>
+
+                        <p>
+                            Construção do projeto com tecnologias modernas.
+                        </p>
+
+                    </div>
+
+                    <div class="processo-card">
+
+                        <small>04</small>
+
+                        <span class="processo-icon entrega">
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </span>
+
+                        <h3>Entrega</h3>
+
+                        <p>
+                            Projeto finalizado e pronto para uso.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+
+            <div class="interface">
+
+                <span>PRONTO PARA COMEÇAR?</span>
+
+                <h2>
+                    Vamos transformar sua <span class="ideia">ideia</span> em um projeto profissional
+                </h2>
+
+                <p>
+                    Desenvolvimento de sites, landing pages e sistemas
+                    modernos focados em performance, experiência do usuário
+                    e conversão.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="#" class="btn-cta">
+                        Solicitar Orçamento
+                    </a>
+
+                    <a href="#portfolio" class="btn-secondary">
+                        Ver Projetos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- <div class="modal" id="modal">
+
+            <div class="modal-content">
+
+                <span class="close">
+                    &times;
+                </span>
+
+                <div class="modal-image">
+
+                    <img id="modal-img" src="../../app/assets/background/background.jpg" alt="">
+
+                </div>
+
+                <div class="modal-info">
+
+                    <h2 id="modal-title"></h2>
+
+                    <div id="modal-cliente"></div>
+
+                    <div id="modal-categoria"></div>
+
+                    <div id="modal-tech"></div>
+
+                    <div id="modal-objetivo"></div>
+
+                    <p id="modal-desc"></p>
+
+                </div>
+
+            </div>
+
+        </div> -->
+    </main>
+
+
+    <footer id="contact">
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+                <p>Tecnologia Design e inovação para empresas.</p>
+
+                <div id="footer-social-midia">
+                    <a href="https://www.instagram.com/mockycode?igsh=M2VqNDFxdDEwenho" target="_blank"
+                        class="footer-link" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/Brunobarbosa-Tech" target="_blank" class="footer-link" id="github">
+                        <i class="bi bi-github icon-black"></i>
+                    </a>
+
+                    <a href="https://wa.me/5511987100570" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>SERVIÇOS</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desenvolvimento Web</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Landing Pages</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sistemas Web</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Aplicativos Mobile</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>DESIGN</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">UX/UI Design</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Identidade Visual</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Design Gráfico</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Social Media</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>EMPRESA</h3>
+                </li>
+                <li>
+                    <a href="#home" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="footer-link">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="footer-link">Portfólio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer-link">Contato</a>
+                </li>
+            </ul>
+
+
+            <div id="footer-subscribe">
+                <h3>CONTATO</h3>
+
+                <p>Solicite um orçamento e transforme sua ideia em um produto digital.</p>
+
+                <div id="input-group">
+                    <input type="email" id="email" placeholder="Seu melhor e-mail">
+                    <button>
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyright">
+            &#169
+            2026 MockyCode — Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div class="chatbot-wrapper">
+
+        <!-- BOTÃO FLUTUANTE -->
+        <button class="chatbot-button" id="chatbotButton">
+
+            <i class="bi bi-chat-dots-fill"></i>
+
+        </button>
+
+        <!-- JANELA -->
+        <div class="chatbot-box" id="chatbotBox">
+
+            <!-- HEADER -->
+            <div class="chatbot-header">
+
+                <div class="chatbot-title">
+
+                    <i class="bi bi-robot"></i>
+                    <span>Assistente MockyIA</span>
+
+                </div>
+
+                <button id="closeChat">
+
+                    <i class="bi bi-x-lg"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MENSAGENS -->
+            <div class="chatbot-messages" id="chatMessages">
+            </div>
+
+            <!-- OPÇÕES DINÂMICAS -->
+            <div class="chat-options" id="chatOptions">
+            </div>
+
+            <!-- RODAPÉ -->
+            <div class="chat-footer" id="chatFooter">
+
+                <button id="restartChat">
+
+                    <i class="bi bi-arrow-clockwise"></i>
+                    Recomeçar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
