@@ -1,0 +1,161 @@
+/* CARROSSEL Cultura */
+
+/* .culture {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.culture-slider {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.culture-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.culture-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: cultureSlide 40s linear infinite;
+}
+
+@keyframes cultureSlide {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+.culture-track:hover {
+    animation-play-state: paused;
+}
+
+/* GRUPOS */
+/* 
+.culture-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+
+
+.culture-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.culture-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s;
+}
+
+.culture-card:hover img {
+    transform: scale(1.08);
+}
+
+
+
+.culture-card .overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(10, 10, 16, .55),
+            rgba(10, 10, 16, .55));
+}
+
+
+
+.culture-card .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+.culture-card h3 {
+    max-width: 220px;
+}
+
+.culture .section-title {
+    max-width: 800px;
+    margin: 0 auto 120px;
+    text-align: center;
+}
+
+.culture .section-title span {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.culture .section-title h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.culture .section-title p {
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+
+.card-large {
+    width: 340px;
+    height: 460px;
+}
+
+
+
+.card-small {
+    width: 240px;
+    height: 240px;
+    margin-top: 140px;
+}
+
+
+
+.culture-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.culture-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #d5d5d5;
+    transition: .3s;
+}
+
+.culture-dots button.active {
+    background: var(--color-2);
+    transform: scale(1.2);
+}  */

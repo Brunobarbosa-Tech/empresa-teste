@@ -20,22 +20,55 @@ document.addEventListener("DOMContentLoaded", () => {
   // ABRIR MODAL
   cards.forEach(card => {
 
-    card.addEventListener("click", (e) => {
-      e.preventDefault();
+  card.addEventListener("click", (e) => {
 
-      modalImg.src = card.dataset.img;
-      modalTitle.textContent = card.dataset.title;
-      modalCliente.textContent = card.dataset.cliente;
-      modalCategoria.textContent = card.dataset.categoria;
-      modalTech.textContent = card.dataset.tech;
-      modalObjetivo.textContent = card.dataset.objetivo;
-      modalDesc.textContent = card.dataset.desc;
+    // Mobile
+    if (window.innerWidth <= 768) {
 
-      modal.classList.add("active");
-      document.body.style.overflow = "hidden";
-    });
+      if (!e.target.classList.contains("open-modal")) {
+
+        e.preventDefault();
+
+        cards.forEach(c => {
+          if (c !== card) {
+            c.classList.remove("active-card");
+          }
+        });
+
+        card.classList.toggle("active-card");
+      }
+    }
 
   });
+
+});
+
+// Função Botão
+const modalButtons = document.querySelectorAll(".open-modal");
+
+modalButtons.forEach(button => {
+
+  button.addEventListener("click", (e) => {
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const card = button.closest(".portfolio-box");
+
+    modalImg.src = card.dataset.img;
+    modalTitle.textContent = card.dataset.title;
+    modalCliente.textContent = card.dataset.cliente;
+    modalCategoria.textContent = card.dataset.categoria;
+    modalTech.textContent = card.dataset.tech;
+    modalObjetivo.textContent = card.dataset.objetivo;
+    modalDesc.textContent = card.dataset.desc;
+
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+
+  });
+
+});
 
   // FECHAR
   const close = () => {
@@ -66,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     extras.forEach((card, i) => {
       setTimeout(() => {
         card.classList.toggle("hidden", !expanded);
-      }, i * 80);
+      }, i * 140);
     });
 
     btnMore.textContent = expanded

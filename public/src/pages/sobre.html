@@ -1,11 +1,529 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+
+    <!-- SEO básico -->
+    <meta name="description"
+        content="Criamos sites, landing pages e sistemas web modernos com foco em performance, design e conversão.">
+    <meta name="keywords" content="desenvolvimento web, landing page, UI UX, sistemas web, frontend, MockyCode">
+    <meta name="author" content="MockyCode">
+
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- TÍTULO -->
+    <title>MockyCode | Desenvolvimento Web, UI/UX e Sistemas</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="../../app/assets/logo/logo-mockycode.svg" type="image/svg+xml">
+
+    <!-- OG IMAGE (preview WhatsApp / redes sociais) -->
+    <meta property="og:title" content="MockyCode | Desenvolvimento Web">
+    <meta property="og:description"
+        content="Sites modernos, sistemas e UX/UI de alto nível com foco em performance e conversão.">
+    <meta property="og:image" content="https://seudominio.com/public/app/assets/images/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/global/reset.css">
+    <link rel="stylesheet" href="../css/views/sobre.css">
+
+    <script src="../js/components/carrosel.js" defer></script>
+    <script src="../js/components/menumobi.js" defer></script>
+    <script src="../js/effects/deshboard.js" defer></script>
+    <script src="../js/components/chtabot-ui.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="nav-bar">
+
+            <div class="logo">
+                <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+            </div>
+
+            <div class="nav-list">
+
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="../pages/portfolio.html">Portfólio</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+
+                <div class="mobile-actions">
+
+                    <a href="#" class="btn-loja">
+                        <i class="bi bi-bag-check-fill"></i>
+                    </a>
+
+                    <a href="#contact" class="btn-contato-menu">
+                        Solicitar Orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="nav-actions">
+                <a href="#" class="btn-loja">
+                    <i class="bi bi-bag-check-fill"></i>
+                </a>
+
+                <a href="#contact" class="btn-contato-menu">
+                    Solicitar Orçamento
+                </a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="slide">
+        <section class="hero-carousel">
+
+            <section class="hero-carousel">
+                <div class="carousel">
+                    <div class="item active" style="background-image: url('../../app/assets/background/kkkp.jpg');">
+                        <div class="content">
+                            <h2><span>Sistemas e Performance</span></h2>
+                            <p>Trabalhamos lado a lado com nossos clientes para entender objetivos e criar soluções
+                                alinhadas ao negócio.</p>
+                        </div>
+                    </div>
+
+                    <div class="item"
+                        style="background-image: url('../../app/assets/background/business-people-shaking-hands-together.jpg');">
+                        <div class="content">
+                            <h2><span>Confiança e Resultados</span></h2>
+                            <p>Projetos reais que geram valor e impacto no seu negócio.</p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('../../app/assets/background/analise.jpg');">
+                        <div class="content">
+                            <h2><span>Dados e Inteligência</span></h2>
+                            <p>Decisões baseadas em dados para análises para otimizar máxima eficiência.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="culture" id="culture">
+
+            <div class="section-title">
+                <span>Cultura da Empresa</span>
+                <h2>Construímos tecnologia com propósito</h2>
+                <p>
+                    Nossa cultura é guiada por inovação, excelência técnica e foco total em resultados reais.
+                </p>
+            </div>
+
+            <!-- CARDS CULTURA -->
+            <div class="culture-wrapper">
+
+                <div class="culture-card">
+                    <i class="bi bi-lightbulb"></i>
+                    <h3>Inovação</h3>
+                    <p>Sempre buscamos soluções modernas, criativas e eficientes para problemas reais.</p>
+                </div>
+
+                <div class="culture-card">
+                    <i class="bi bi-people"></i>
+                    <h3>Colaboração</h3>
+                    <p>Trabalhamos como um time, evoluindo juntos em cada projeto entregue.</p>
+                </div>
+
+                <div class="culture-card">
+                    <i class="bi bi-rocket-takeoff"></i>
+                    <h3>Alta Performance</h3>
+                    <p>Foco em velocidade, escalabilidade e qualidade em cada linha de código.</p>
+                </div>
+
+                <div class="culture-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Qualidade</h3>
+                    <p>Código limpo, UI refinada e experiência impecável em cada entrega.</p>
+                </div>
+
+            </div>
+
+            <!-- MANIFESTO NOVO LAYOUT -->
+            <div class="manifesto-wrapper">
+
+                <div class="manifesto-card">
+                    <i class="bi bi-bullseye"></i>
+                    <div>
+                        <h3>Missão</h3>
+                        <p>Criar experiências digitais que geram resultado real para empresas.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-card">
+                    <i class="bi bi-compass"></i>
+                    <div>
+                        <h3>Propósito</h3>
+                        <p>Transformar ideias em produtos digitais escaláveis e de alta performance.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-card highlight">
+                    <i class="bi bi-gem"></i>
+                    <div>
+                        <h3>Cultura</h3>
+                        <p>Unimos design, tecnologia e estratégia para criar produtos digitais de alto nível.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta-sobre">
+
+            <div class="cta-content">
+
+                <span>Nossa cultura e valores</span>
+
+                <h2>
+                    Mais do que desenvolver projetos,
+                    construímos parcerias de longo prazo.
+                </h2>
+
+                <p>
+                    Cada projeto é construído com cuidado, responsabilidade e dedicação — porque acreditamos que
+                    resultados consistentes vêm de relações bem construídas.
+                </p>
+
+                <!-- <a href="#contato" class="btn-sobre">
+                    Iniciar Projeto
+                    <i class="bi bi-arrow-right"></i>
+                </a> -->
+
+            </div>
+
+            <div class="cta-image">
+                <img src="../../app/assets/background/mm.jpg" alt="Equipe desenvolvendo projetos digitais">
+            </div>
+
+        </section>
+
+        <section class="culture-dashboard" id="culture">
+
+            <div class="dash-left saas-reveal">
+
+                <span class="dash-badge">📊 Analytics Dashboard</span>
+
+                <h2>Cultura como métricas de performance</h2>
+
+                <p>
+                    Monitoramos nossa cultura como um sistema de dados em tempo real,
+                    igual um painel de BI corporativo.
+                </p>
+
+                <!-- KPI PRINCIPAL -->
+                <div class="kpi-xp">
+
+                    <span>🏆 Culture Score</span>
+
+                    <div class="xp-bar">
+
+                        <div class="xp-fill" data-value="100">
+                            <i class="bi bi-rocket-takeoff xp-icon"></i>
+                        </div>
+
+                    </div>
+
+                    <h2 class="xp-number">0%</h2>
+
+                </div>
+
+            </div>
+
+            <div class="dash-grid saas-reveal">
+
+                <div class="kpi-card">
+                    <span>🚀 Inovação</span>
+                    <h3 class="counter" data-value="92">0</h3>
+                </div>
+
+                <div class="kpi-card">
+                    <span>🤝 Colaboração</span>
+                    <h3 class="counter" data-value="88">0</h3>
+                </div>
+
+                <div class="kpi-card">
+                    <span>⚡ Performance</span>
+                    <h3 class="counter" data-value="95">0</h3>
+                </div>
+
+                <div class="kpi-card">
+                    <span>🔒 Qualidade</span>
+                    <h3 class="counter" data-value="90">0</h3>
+                </div>
+
+                <div class="kpi-wide">
+                    <span>📈 Insight</span>
+                    <p>Alta consistência em performance nos últimos projetos entregues.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="security" id="security">
+
+            <div class="section-title">
+                <span>Segurança</span>
+                <h2>Proteção e confiança em cada projeto</h2>
+            </div>
+
+            <div class="security-layout">
+
+                <!-- ESQUERDA -->
+                <div class="security-content">
+
+                    <div class="security-highlight">
+                        <span class="security-badge">🔒 Secure Development</span>
+
+                        <h3>Proteção de Dados</h3>
+                        <p>
+                            Garantimos segurança em todos os projetos com práticas modernas de proteção, criptografia e
+                            boas arquiteturas.
+                        </p>
+                    </div>
+
+                    <!-- LISTA (SEM CARD PESADO) -->
+                    <div class="security-list">
+
+                        <div class="security-item">
+                            <i class="bi bi-shield-lock"></i>
+                            <div>
+                                <h3>Conexão Segura</h3>
+                                <p>Sites com HTTPS e comunicação criptografada para maior confiabilidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="security-item">
+                            <i class="bi bi-server"></i>
+                            <div>
+                                <h3>Infraestrutura Estável</h3>
+                                <p>Soluções desenvolvidas com foco em performance e estabilidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="security-item">
+                            <i class="bi bi-code-slash"></i>
+                            <div>
+                                <h3>Boas Práticas</h3>
+                                <p>Código limpo, organizado e seguro seguindo padrões modernos de desenvolvimento.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DIREITA (IMAGEM) -->
+                <div class="security-image">
+                    <img src="../../app/assets/icon/Security-amico.svg" alt="Segurança Digital">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta-sobre">
+
+            <!-- IMAGEM -->
+            <div class="cta-image">
+                <img src="../../app/assets/gifs/Loop Glow GIF.gif" alt="Soluções digitais modernas">
+            </div>
+
+            <!-- CONTEÚDO -->
+            <div class="cta-content">
+
+                <span>Nossos valores</span>
+
+                <h2>
+                    Construímos relações de longo prazo, não apenas entregas pontuais.
+                </h2>
+
+                <p>
+                    Valorizamos a comunicação clara, o cuidado com os detalhes e o compromisso real com o sucesso de
+                    cada cliente.
+                    Aqui, cada projeto importa — porque cada cliente representa uma história, um objetivo e um
+                    crescimento em construção.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer id="contact">
+            <div id="footer-content">
+                <div id="footer-contacts">
+                    <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+                    <p>Tecnologia Design e inovação para empresas.</p>
+
+                    <div id="footer-social-midia">
+                        <a href="https://www.instagram.com/mockycode?igsh=M2VqNDFxdDEwenho" target="_blank"
+                            class="footer-link" id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/Brunobarbosa-Tech" target="_blank" class="footer-link" id="github">
+                            <i class="bi bi-github icon-black"></i>
+                        </a>
+
+                        <a href="https://wa.me/5511987100570" target="_blank" class="footer-link" id="whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>SERVIÇOS</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Desenvolvimento Web</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Landing Pages</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Sistemas Web</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Aplicativos Mobile</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>DESIGN</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">UX/UI Design</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Identidade Visual</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Design Gráfico</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Social Media</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>EMPRESA</h3>
+                    </li>
+                    <li>
+                        <a href="#home" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer-link">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer-link">Portfólio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer-link">Contato</a>
+                    </li>
+                </ul>
+
+
+                <div id="footer-subscribe">
+                    <h3>CONTATO</h3>
+
+                    <p>Solicite um orçamento e transforme sua ideia em um produto digital.</p>
+
+                    <div id="input-group">
+                        <input type="email" id="email" placeholder="Seu melhor e-mail">
+                        <button>
+                            <i class="bi bi-envelope-at-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-copyright">
+                &#169
+                2026 MockyCode — Todos os direitos reservados.
+            </div>
+        </footer>
+
+        <!-- CHATBOT -->
+        <div class="chatbot-wrapper">
+
+            <!-- BOTÃO FLUTUANTE -->
+            <button class="chatbot-button" id="chatbotButton">
+
+                <i class="bi bi-chat-dots-fill"></i>
+
+            </button>
+
+            <!-- JANELA -->
+            <div class="chatbot-box" id="chatbotBox">
+
+                <!-- HEADER -->
+                <div class="chatbot-header">
+
+                    <div class="chatbot-title">
+
+                        <i class="bi bi-robot"></i>
+                        <span>Assistente MockyIA</span>
+
+                    </div>
+
+                    <button id="closeChat">
+
+                        <i class="bi bi-x-lg"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- MENSAGENS -->
+                <div class="chatbot-messages" id="chatMessages">
+                </div>
+
+                <!-- OPÇÕES DINÂMICAS -->
+                <div class="chat-options" id="chatOptions">
+                </div>
+
+                <!-- RODAPÉ -->
+                <div class="chat-footer" id="chatFooter">
+
+                    <button id="restartChat">
+
+                        <i class="bi bi-arrow-clockwise"></i>
+                        Recomeçar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
 </body>
+
 </html>

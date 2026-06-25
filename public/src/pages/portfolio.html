@@ -35,28 +35,43 @@
     <script src="../js/effects/processo.js" defer></script>
     <script src="../js/effects/modal.js" defer></script>
     <script src="../js/components/chtabot-ui.js" defer></script>
+    <script src="../js/effects/timeline.js" defer></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar">
+    <header>
+        <nav class="nav-bar">
 
-        <div class="logo">
-            <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
-        </div>
+            <div class="logo">
+                <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+            </div>
 
-        <div class="nav-list">
+            <div class="nav-list">
 
-            <ul>
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../pages/sobre.html">Sobre</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#"">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
 
-            <div class="mobile-actions">
+                <div class="mobile-actions">
 
+                    <a href="#" class="btn-loja">
+                        <i class="bi bi-bag-check-fill"></i>
+                    </a>
+
+                    <a href="#contact" class="btn-contato-menu">
+                        Solicitar Orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="nav-actions">
                 <a href="#" class="btn-loja">
                     <i class="bi bi-bag-check-fill"></i>
                 </a>
@@ -64,26 +79,14 @@
                 <a href="#contact" class="btn-contato-menu">
                     Solicitar Orçamento
                 </a>
-
             </div>
 
-        </div>
+            <div class="mobile-menu-btn">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+            </div>
 
-        <div class="nav-actions">
-            <a href="#" class="btn-loja">
-                <i class="bi bi-bag-check-fill"></i>
-            </a>
-
-            <a href="#contact" class="btn-contato-menu">
-                Solicitar Orçamento
-            </a>
-        </div>
-
-        <div class="mobile-menu-btn">
-            <i class="bi bi-grid-3x3-gap-fill"></i>
-        </div>
-
-    </nav>
+        </nav>
+    </header>
 
     <main>
 
@@ -94,9 +97,9 @@
                 </div>
 
                 <div class="txt-hero">
-                    <h1>Ideias digitais. <span>Resultado reais!</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ducimus voluptatem nulla quasi
-                        tempora totam minu.</p>
+                    <h1> Ideias digitais que geram <span>resultados reais</span></h1>
+                    <p> Criamos sites, landing pages e experiências digitais com foco em performance,
+                        design moderno e conversão de clientes.</p>
                     <a href="#" class="btn-contato-menu">
                         Solicitar Orçamento
                     </a>
@@ -109,15 +112,17 @@
                 <div class="txt-sobre">
                     <h1 class="titulo-section">Sobre <span>mim</span></h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nobis repellat quo porro eius
-                        atque reprehenderit perferendis perspiciatis itaque. Reiciendis inventore earum quo quibusdam.
-                        Nemo ratione incidunt esse unde dolorem.
+                        Desenvolvimento de soluções digitais focadas em performance, identidade visual e experiência do
+                        usuário.
+                        Crio sites, landing pages, apps e interfaces modernas pensadas para destacar marcas e gerar
+                        resultados no ambiente digital.
                     </p>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, neque! Voluptates corporis
-                        nemo quod autem natus tempora doloremque in officiis ipsum, libero, quo eligendi minus quia
-                        consequatur sequi, dolorem aperiam!
+                        Atuo na criação de soluções que conectam desenvolvimento web, análise de dados e automação de
+                        processos,
+                        utilizando tecnologia para otimizar decisões, melhorar a eficiência e potencializar resultados
+                        digitais.
                     </p>
 
                     <div class="btn-redes">
@@ -161,33 +166,241 @@
             <div class="interface">
 
                 <h1 class="titulo-section">
-                    Minhas <span>Especialidades</span>
+                    Soluções que <span>desenvolvo</span>
                 </h1>
 
                 <div class="skills-container">
 
                     <div class="skill-card">
                         <i class="bi bi-code-slash"></i>
-                        <h3>Front-End</h3>
-                        <p>HTML, CSS, JavaScript e interfaces modernas.</p>
+                        <h3>Desenvolvimento Front-End</h3>
+                        <p>Interfaces modernas, rápidas e responsivas focadas em experiência do usuário e conversão.</p>
                     </div>
 
                     <div class="skill-card">
                         <i class="bi bi-palette"></i>
                         <h3>UI/UX Design</h3>
-                        <p>Criação de layouts intuitivos e responsivos.</p>
+                        <p>Criação de interfaces intuitivas com foco em usabilidade, identidade visual e estratégia.</p>
                     </div>
 
                     <div class="skill-card">
                         <i class="bi bi-window"></i>
-                        <h3>Landing Pages</h3>
-                        <p>Páginas focadas em conversão e vendas.</p>
+                        <h3>Landing Pages & Sites</h3>
+                        <p>Estruturação de páginas e sites focados em vendas, captação de leads e presença digital.</p>
                     </div>
 
                     <div class="skill-card">
                         <i class="bi bi-phone"></i>
-                        <h3>Responsividade</h3>
-                        <p>Experiência perfeita em qualquer dispositivo.</p>
+                        <h3>Experiência Mobile</h3>
+                        <p>Interfaces otimizadas para dispositivos móveis, com foco em navegação fluida, velocidade e
+                            usabilidade.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-bar-chart"></i>
+                        <h3>Dashboards</h3>
+                        <p>Criação de painéis visuais para análise de dados, métricas e tomada de decisão estratégica.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <h3>Dados e Análise</h3>
+                        <p>Estruturação de interfaces e fluxos orientados a dados para melhorar performance e
+                            resultados.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-cpu"></i>
+                        <h3>Automação & IA</h3>
+                        <p>Aplicação de soluções inteligentes para otimizar processos e aumentar eficiência digital.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="bi bi-hdd-network"></i>
+                        <h3>Sistemas Web</h3>
+                        <p>
+                            Desenvolvimento de estruturas para aplicações web, com foco em organização, lógica de fluxo
+                            e integração de funcionalidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="portfolio" id="portfolio">
+
+            <div class="interface">
+
+                <div class="section-title">
+                    <span>PORTFÓLIO</span>
+                    <h2>Projetos criados para gerar valor e conversão</h2>
+                    <p>
+                        Cada projeto foi desenvolvido com foco em performance, clareza visual e objetivos reais de
+                        negócio,
+                        como geração de leads, vendas e presença digital.
+                    </p>
+                </div>
+
+                <article class="portfolio-container">
+
+                    <a href="#" class="portfolio-box projeto1" data-img="../../app/assets/portfolio/projeto-01.png""
+                        data-title=" Landing Page SaaS" data-cliente="Startup Alpha" data-categoria="Landing Page"
+                        data-tech="SaaS | Front-End | Conversão" data-objetivo="Aumentar conversão de leads"
+                        data-desc="Landing page estratégica focada em performance, velocidade e conversão de usuários para um modelo SaaS moderno">
+
+                        <div class="infor-portfolio">
+                            <h3>PLanding Page SaaS</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto2" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="Site Institucional Corporativo" data-cliente="Empresa Beta"
+                        data-categoria="Institucional" data-tech="Institucional | Front-End | UX"
+                        data-objetivo="Presença digital profissional"
+                        data-desc="Site institucional moderno com foco em UX, confiança e apresentação de marca">
+
+                        <div class="infor-portfolio">
+                            <h3>Site Institucional</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto3" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="E-commerce Otimizado para Vendas" data-cliente="Loja Gamma"
+                        data-categoria="E-commerce" data-tech="E-commerce | UI/UX | Conversão"
+                        data-objetivo="Aumento de vendas online"
+                        data-desc="Interface de loja virtual pensada para maximizar conversão e experiência de compra">
+
+                        <div class="infor-portfolio">
+                            <h3>Plataforma de Vendas</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto4" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="Dashboard Administrativo de Gestão" data-cliente="SaaS Delta"
+                        data-categoria="Dashboard" data-tech="Dashboard | Dados | Interface"
+                        data-objetivo="Gestão e visualização de dados"
+                        data-desc="Painel administrativo moderno com visual limpo e foco em organização de informações">
+
+                        <div class="infor-portfolio">
+                            <h3>Dashboard Inteligente</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto5" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="App Landing Page Mobile" data-cliente="Startup Epsilon"
+                        data-categoria="Landing Page" data-tech="Mobile | Landing Page | UX"
+                        data-objetivo="Download de aplicativo"
+                        data-desc="Landing page otimizada para apresentação e download de aplicativo mobile">
+
+                        <div class="infor-portfolio">
+                            <h3>App Landing Page</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto6" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="Portfólio Criativo Profissional" data-cliente="Designer Freelancer"
+                        data-categoria="Portfólio" data-tech="Portfólio | UI/UX | Front-End"
+                        data-objetivo="Apresentação de trabalhos"
+                        data-desc="Site criativo desenvolvido para exibição de projetos e identidade profissional">
+
+                        <div class="infor-portfolio">
+                            <h3>Portfólio Interativo</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto7" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="Landing Page Educacional" data-cliente="Curso Online" data-categoria="Educação"
+                        data-tech="Educação | Landing Page | Conversão" data-objetivo="Captação de alunos"
+                        data-desc="Landing page focada em vendas de cursos online e conversão de leads educacionais">
+
+                        <div class="infor-portfolio">
+                            <h3>Plataforma Educacional</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="#" class="portfolio-box projeto8" data-img="../../app/assets/portfolio/projeto-01.png"
+                        data-title="Sistema Web CRM de Clientes" data-cliente="Empresa SaaS"
+                        data-categoria="Sistema Web" data-tech="CRM | Sistema Web | Gestão"
+                        data-objetivo="Gestão de clientes"
+                        data-desc="Sistema CRM completo para controle e organização de clientes e processos">
+
+                        <div class="infor-portfolio">
+                            <h3>CRM Gestão Empresarial</h3>
+
+                            <button class="open-modal">
+                                Ver projeto
+                            </button>
+                        </div>
+                    </a>
+
+                </article>
+
+                <div class="portfolio-btn">
+                    <button id="btnMore">Ver mais soluções</button>
+                </div>
+
+            </div>
+
+            <!-- =======================
+         MODAL ÚNICO (CORRETO)
+    ======================== -->
+            <div class="portfolio-modal" id="portfolioModal">
+
+                <div class="modal-content">
+
+                    <div class="modal-top">
+                        <span class="close-modal" id="closeModal">
+                            <i class="bi bi-x-lg"></i>
+                        </span>
+                    </div>
+
+                    <img id="modalImage" src="" alt="Projeto">
+
+                    <div class="modal-info">
+
+                        <h3 id="modalTitle"></h3>
+
+                        <div id="modalCliente"></div>
+                        <div id="modalCategoria"></div>
+                        <div id="modalTech"></div>
+                        <div id="modalObjetivo"></div>
+
+                        <p id="modalDesc"></p>
+
+                        <a id="modalLink" href="#" target="_blank" class="modal-btn">
+                            Ver Projeto Completo
+                        </a>
+
                     </div>
 
                 </div>
@@ -196,170 +409,17 @@
 
         </section>
 
-      <section class="portfolio" id="portfolio">
-
-    <div class="interface">
-
-        <div class="section-title">
-            <span>PORTFÓLIO</span>
-            <h2>Projetos que mostram minha evolução</h2>
-            <p>
-                Cada projeto foi desenvolvido com foco em performance,
-                experiência do usuário e conversão.
-            </p>
-        </div>
-
-        <article class="portfolio-container">
-
-            <a href="#" class="portfolio-box projeto1"
-                data-img="../../app/assets/portfolio/projeto-01.png""
-                data-title="Landing Page SaaS"
-                data-cliente="Startup Alpha"
-                data-categoria="Landing Page"
-                data-tech="HTML, CSS, JavaScript"
-                data-objetivo="Conversão de leads"
-                data-desc="Projeto focado em alta performance e conversão de usuários">
-
-                <div class="infor-portfolio">Projeto 01</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto2"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="Site Institucional"
-                data-cliente="Empresa Beta"
-                data-categoria="Institucional"
-                data-tech="HTML, CSS, JavaScript"
-                data-objetivo="Presença digital profissional"
-                data-desc="Site moderno com foco em UX e responsividade">
-
-                <div class="infor-portfolio">Projeto 02</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto3"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="E-commerce UI"
-                data-cliente="Loja Gamma"
-                data-categoria="E-commerce"
-                data-tech="HTML, CSS, JS"
-                data-objetivo="Vendas online"
-                data-desc="Interface de loja virtual otimizada para conversão">
-
-                <div class="infor-portfolio">Projeto 03</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto4"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="Dashboard Admin"
-                data-cliente="SaaS Delta"
-                data-categoria="Dashboard"
-                data-tech="HTML, CSS, JavaScript"
-                data-objetivo="Gestão de dados"
-                data-desc="Painel administrativo com UI moderna e intuitiva">
-
-                <div class="infor-portfolio">Projeto 04</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto5"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="App Landing Page"
-                data-cliente="Startup Epsilon"
-                data-categoria="Landing Page"
-                data-tech="HTML, CSS, JS"
-                data-objetivo="Download de app"
-                data-desc="Landing page para aplicativo mobile">
-
-                <div class="infor-portfolio">Projeto 05</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto6"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="Portfólio Criativo"
-                data-cliente="Designer Freelancer"
-                data-categoria="Portfólio"
-                data-tech="HTML, CSS, JS"
-                data-objetivo="Apresentação pessoal"
-                data-desc="Site criativo para showcase de trabalhos">
-
-                <div class="infor-portfolio">Projeto 06</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto7"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="Landing Educacional"
-                data-cliente="Curso Online"
-                data-categoria="Educação"
-                data-tech="HTML, CSS, JS"
-                data-objetivo="Captação de alunos"
-                data-desc="Landing page para venda de curso online">
-
-                <div class="infor-portfolio">Projeto 07</div>
-            </a>
-
-            <a href="#" class="portfolio-box projeto8"
-                data-img="../../app/assets/portfolio/projeto-01.png"
-                data-title="Sistema Web CRM"
-                data-cliente="Empresa SaaS"
-                data-categoria="Sistema Web"
-                data-tech="HTML, CSS, JS"
-                data-objetivo="Gestão de clientes"
-                data-desc="Sistema completo de CRM moderno">
-
-                <div class="infor-portfolio">Projeto 08</div>
-            </a>
-
-        </article>
-
-        <div class="portfolio-btn">
-            <button id="btnMore">Ver mais projetos</button>
-        </div>
-
-    </div>
-
-    <!-- =======================
-         MODAL ÚNICO (CORRETO)
-    ======================== -->
-    <div class="portfolio-modal" id="portfolioModal">
-
-        <div class="modal-content">
-
-            <span class="close-modal" id="closeModal">
-                <i class="bi bi-x-lg"></i>
-            </span>
-
-            <img id="modalImage" src="" alt="Projeto">
-
-            <div class="modal-info">
-
-                <h3 id="modalTitle"></h3>
-
-                <div id="modalCliente"></div>
-                <div id="modalCategoria"></div>
-                <div id="modalTech"></div>
-                <div id="modalObjetivo"></div>
-
-                <p id="modalDesc"></p>
-
-                <a id="modalLink" href="#" target="_blank" class="modal-btn">
-                    Acessar arquivo
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
         <section class="numeros">
 
             <div class="interface">
 
                 <div class="section-title">
                     <span>RESULTADOS</span>
-                    <h2>Números que mostram minha evolução</h2>
+                    <h2>Resultados e Impacto dos Projetos</h2>
                     <p>
-                        Projetos entregues com foco em performance, qualidade e experiência do usuário.
+                        Cada projeto é desenvolvido com foco em performance, responsividade e experiência do usuário,
+                        aplicando boas práticas modernas de desenvolvimento para entregar interfaces eficientes,
+                        rápidas e alinhadas aos objetivos do negócio.
                     </p>
                 </div>
 
@@ -367,22 +427,22 @@
 
                     <div class="numero-card">
                         <h3><span class="count" data-target="20">0</span> +</h3>
-                        <p>Projetos Entregues</p>
+                        <p>Projetos Digitais Entregues</p>
                     </div>
 
                     <div class="numero-card">
                         <h3><span class="count" data-target="10">0</span> +</h3>
-                        <p>Clientes Atendidos</p>
+                        <p>Clientes Atendidos com Soluções.</p>
                     </div>
 
                     <div class="numero-card">
                         <h3><span class="count" data-target="100">0</span> %</h3>
-                        <p>Responsivos</p>
+                        <p>Projetos Responsivos e Otimizados</p>
                     </div>
 
                     <div class="numero-card">
                         <h3>A +</h3>
-                        <p>Performance</p>
+                        <p>Performance em Core Web Vitals</p>
                     </div>
 
                 </div>
@@ -400,82 +460,144 @@
                     <span>PROCESSO</span>
 
                     <h2>
-                        Como desenvolvemos cada projeto
+                        Como transformamos ideias em produtos digitais
                     </h2>
 
                     <p>
-                        Do planejamento à entrega, seguimos uma metodologia que une
-                        estratégia, design e tecnologia para criar experiências digitais
-                        de alto impacto.
+                        Cada projeto segue um fluxo estruturado que une estratégia, design e desenvolvimento.
+                        O objetivo é garantir clareza, eficiência e resultados consistentes do início ao fim.
                     </p>
 
                 </div>
 
                 <div class="processo-container">
-                    <div class="processo-card">
+                    <div class="timeline">
+                        <!-- ETAPA 01 -->
+                        <div class="timeline-item">
 
-                        <small>01</small>
+                            <div class="timeline-dot">
+                                <i class="bi bi-chat-square-text"></i>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h3>Diagnóstico e Briefing</h3>
+                                <p>
+                                    Entendemos os objetivos, público-alvo e necessidades do negócio para definir a
+                                    melhor estratégia do projeto.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ETAPA 02 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <i class="bi bi-palette"></i>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h3>Arquitetura e Design</h3>
+                                <p>
+                                    Planejamos a estrutura, experiência do usuário e identidade visual para criar uma
+                                    navegação clara e eficiente.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ETAPA 03 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h3>Desenvolvimento</h3>
+                                <p>
+                                    Transformamos o projeto em uma solução digital rápida, responsiva e preparada para
+                                    diferentes dispositivos.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ETAPA 04 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h3>Entrega e Otimização</h3>
+                                <p>
+                                    Realizamos testes, ajustes finais e otimizações para garantir desempenho,
+                                    estabilidade e qualidade.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- <div class="processo-container">
+                    <div class="processo-card">
 
                         <span class="processo-icon briefing">
                             <i class="bi bi-chat-square-text"></i>
                         </span>
 
-                        <h3>Briefing</h3>
+                        <h3>Diagnóstico e Briefing</h3>
 
                         <p>
-                            Entendemos suas necessidades e objetivos.
+                            Entendemos o objetivo do projeto, público-alvo e necessidades do negócio para definir a direção estratégica.
                         </p>
 
                     </div>
 
                     <div class="processo-card">
-
-                        <small>02</small>
 
                         <span class="processo-icon design">
                             <i class="bi bi-palette"></i>
                         </span>
 
-                        <h3>UI/UX Design</h3>
+                        <h3>Arquitetura e Design</h3>
 
                         <p>
-                            Planejamento da experiência e interface.
+                            Criamos a estrutura visual e a experiência do usuário com foco em clareza, conversão e usabilidade.
                         </p>
 
                     </div>
 
                     <div class="processo-card">
-
-                        <small>03</small>
 
                         <span class="processo-icon desenvolvimento">
                             <i class="bi bi-code-slash"></i>
                         </span>
 
-                        <h3>Desenvolvimento</h3>
+                        <h3>Construção do Projeto</h3>
 
                         <p>
-                            Construção do projeto com tecnologias modernas.
+                            Transformamos o design em um produto digital funcional, rápido e responsivo com boas práticas modernas.
                         </p>
 
                     </div>
 
                     <div class="processo-card">
 
-                        <small>04</small>
-
                         <span class="processo-icon entrega">
                             <i class="bi bi-rocket-takeoff"></i>
                         </span>
 
-                        <h3>Entrega</h3>
+                        <h3>Entrega e Otimização</h3>
 
                         <p>
-                            Projeto finalizado e pronto para uso.
+                            Finalizamos o projeto com ajustes de performance, responsividade e preparo para uso real.
                         </p>
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -486,13 +608,12 @@
                 <span>PRONTO PARA COMEÇAR?</span>
 
                 <h2>
-                    Vamos transformar sua <span class="ideia">ideia</span> em um projeto profissional
+                    Vamos transformar sua <span class="ideia">ideia</span> em um produto digital de alto impacto.
                 </h2>
 
                 <p>
-                    Desenvolvimento de sites, landing pages e sistemas
-                    modernos focados em performance, experiência do usuário
-                    e conversão.
+                    Transformo ideias em soluções digitais que geram resultado, performance e presença online forte para
+                    marcas e negócios.
                 </p>
 
                 <div class="cta-buttons">
@@ -510,42 +631,7 @@
             </div>
 
         </section>
-
-        <!-- <div class="modal" id="modal">
-
-            <div class="modal-content">
-
-                <span class="close">
-                    &times;
-                </span>
-
-                <div class="modal-image">
-
-                    <img id="modal-img" src="../../app/assets/background/background.jpg" alt="">
-
-                </div>
-
-                <div class="modal-info">
-
-                    <h2 id="modal-title"></h2>
-
-                    <div id="modal-cliente"></div>
-
-                    <div id="modal-categoria"></div>
-
-                    <div id="modal-tech"></div>
-
-                    <div id="modal-objetivo"></div>
-
-                    <p id="modal-desc"></p>
-
-                </div>
-
-            </div>
-
-        </div> -->
     </main>
-
 
     <footer id="contact">
         <div id="footer-content">

@@ -38,6 +38,7 @@ body {
     background-color: var(--color-8);
     transition: .5s;
     font-family: var(--font-body);
+    padding-top: 100px;
 }
 
 span,
@@ -48,11 +49,6 @@ span,
 header {
     background-color: var(--color-7);
 }
-
-/* section {
-    display: flex;
-    align-items: center;
-} */
 
 /* NAVBAR */
 .nav-bar {
