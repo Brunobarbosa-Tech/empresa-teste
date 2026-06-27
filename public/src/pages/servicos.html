@@ -29,133 +29,816 @@
 
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CDN ICONS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/views/servicos.css">
+    <link rel="stylesheet" href="../css/global/reset.css">
+
+    <script src="../js/components/powerbi.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/components/menumobi.js" defer></script>
+    <script src="../js/components/chtabot-ui.js" defer></script>
+    <script src="../js/components/slide.js" defer></script>
+    <script src="../js/effects/cta.js" defer></script>
+    <script src="../js/components/particulas.js" defer></script>
+    <script src="../js/components/molecules.js" defer></script>
 
 </head>
 
 <body>
+    <header>
+        <nav class="nav-bar">
 
-    <!-- <section class="culture" id="culture"> 
-
-            <div class="section-title">
-                <span>NOSSA ESSÊNCIA</span>
-                <h2>O que move a MockyCode</h2>
-                <p>
-                    Mais do que criar sites, desenvolvemos experiências digitais
-                    que conectam marcas, pessoas e resultados.
-                </p>
+            <div class="logo">
+                <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
             </div>
 
-            <div class="culture-slider">
+            <div class="nav-list">
 
-                <div class="culture-track">
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
 
-                    <div class="culture-group">
+                <div class="mobile-actions">
 
-                        <article class="culture-card card-large">
-                            <img src="../../app/assets/card-img/cultura-01.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Transformamos ideias em experiências digitais</h3>
-                            </div>
-                        </article>
+                    <a href="#" class="btn-loja">
+                        <i class="bi bi-bag-check-fill"></i>
+                    </a>
 
-                        <article class="culture-card card-small">
-                            <img src="../../app/assets/card-img/cultura-02.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Design pensado para converter</h3>
-                            </div>
-                        </article>
+                    <a href="#contact" class="btn-contato-menu">
+                        Solicitar Orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="nav-actions">
+                <a href="#" class="btn-loja">
+                    <i class="bi bi-bag-check-fill"></i>
+                </a>
+
+                <a href="#contact" class="btn-contato-menu">
+                    Solicitar Orçamento
+                </a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+            </div>
+
+        </nav>
+    </header>
+    <canvas id="particles-bg"></canvas>
+  
+    <main class="dashboard">
+
+        <div class="dashboard-title">
+
+            <span class="section-tag">
+                <i class="bi bi-stars"></i>
+                DASHBOARD INTERATIVO
+            </span>
+
+            <h2>
+                Explore nossas soluções em um painel inteligente.
+            </h2>
+
+            <p>
+                Desenvolvemos uma experiência interativa para apresentar nossos
+                serviços, tecnologias e diferenciais de forma dinâmica,
+                mostrando como estratégia, design e inovação trabalham juntos
+                para transformar ideias em resultados.
+            </p>
+
+        </div>
+
+        <div class="dashboard-container">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <div class="sidebar-logo">
+                    <img src="../../app/assets/logo/logo-mockycode.svg" alt="MockyCode">
+                </div>
+
+                <nav class="sidebar-menu">
+
+                    <a href="#" class="active" data-section="dashboard">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="#" data-section="sites">
+                        <i class="bi bi-window"></i>
+                        <span>Sites</span>
+                    </a>
+
+                    <a href="#" data-section="landing">
+                        <i class="bi bi-layout-text-window"></i>
+                        <span>Landing Pages</span>
+                    </a>
+
+                    <a href="#" data-section="systems">
+                        <i class="bi bi-code-square"></i>
+                        <span>Sistemas</span>
+                    </a>
+
+                    <a href="#" data-section="uxui">
+                        <i class="bi bi-palette"></i>
+                        <span>UX/UI</span>
+                    </a>
+
+                    <a href="#" data-section="analytics">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <span>Analytics</span>
+                    </a>
+
+                </nav>
+
+            </aside>
+
+            <!-- CONTEÚDO -->
+            <section class="dashboard-content">
+
+                <!-- HEADER DINÂMICO -->
+                <header class="dashboard-header">
+
+                    <div class="dashboard-info">
+                        <h2 id="section-title">Dashboard</h2>
+                        <p id="section-desc">Visão geral dos serviços MockyCode</p>
+                    </div>
+
+                    <div class="header-actions">
+
+                        <button id="theme-toggle">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+
+                        <button id="theme-neon" title="Modo Neon">
+                            <i class="fa-solid fa-atom"></i>
+                        </button>
+
+                        <button class="btn-dashboard">
+                            Iniciar Projeto
+                        </button>
 
                     </div>
 
-                    <div class="culture-group">
+                </header>
 
-                        <article class="culture-card card-large">
-                            <img src="../../app/assets/card-img/cultura-03.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Tecnologia que gera resultados</h3>
-                            </div>
-                        </article>
+                <!-- KPIs -->
+                <section class="kpis">
 
-                        <article class="culture-card card-small">
-                            <img src="../../app/assets/card-img/cultura-04.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>UX focada em pessoas</h3>
-                            </div>
-                        </article>
+                    <article class="kpi-card">
+                        <h3>Projetos</h3>
+                        <span class="counter" data-target="20">0</span>
+                    </article>
 
+                    <article class="kpi-card">
+                        <h3>Clientes</h3>
+                        <span class="counter" data-target="10">0</span>
+                    </article>
+
+                    <article class="kpi-card">
+                        <h3>Performance</h3>
+                        <span>A +</span>
+                    </article>
+
+                    <article class="kpi-card">
+                        <h3>Responsividade</h3>
+                        <span>100%</span>
+                    </article>
+
+                </section>
+
+                <!-- DESCRIÇÃO DO MÓDULO -->
+                <section class="module-info">
+
+                    <h3 id="module-title">Acompanhamento em tempo real</h3>
+                    <p id="module-text">
+                        Visualize métricas atualizadas conforme a seção selecionada no menu lateral.
+                    </p>
+
+                </section>
+
+                <!-- GRÁFICOS -->
+                <div class="chart-row">
+
+                    <div class="chart-medium">
+                        <canvas id="chartSide1"></canvas>
                     </div>
 
-                    <div class="culture-group">
-
-                        <article class="culture-card card-large">
-                            <img src="../../app/assets/card-img/cultura-05.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Sites rápidos e responsivos</h3>
-                            </div>
-                        </article>
-
-                        <article class="culture-card card-small">
-                            <img src="../../app/assets/card-img/cultura-06.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Inovação em cada projeto</h3>
-                            </div>
-                        </article>
-
+                    <div class="chart-medium">
+                        <canvas id="chartSide2"></canvas>
                     </div>
 
-                    <div class="culture-group">
+                </div>
 
-                        <article class="culture-card card-large">
-                            <img src="../../app/assets/card-img/cultura-07.png" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Parceiros no crescimento do seu negócio</h3>
-                            </div>
-                        </article>
+                <div class="chart-row">
 
-                        <article class="culture-card card-small">
-                            <img src="../../app/assets/card-img/cultura-08.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Compromisso com a excelência</h3>
-                            </div>
-                        </article>
-
+                    <div class="chart-medium">
+                        <canvas id="chartMain"></canvas>
                     </div>
 
-                       <div class="culture-group">
+                    <div class="chart-medium">
+                        <canvas id="chartBottom"></canvas>
+                    </div>
 
-                        <article class="culture-card card-large">
-                            <img src="../../app/assets/card-img/cultura-09.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>IA para acelerar resultados reais</h3>
-                            </div>
-                        </article>
+                </div>
 
-                        <article class="culture-card card-small">
-                            <img src="../../app/assets/card-img/cultura-10.jpg" alt="Card Imagem">
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h3>Análise estratégica orientada por dados</h3>
-                            </div>
-                        </article>
+            </section>
+
+        </div>
+
+    </main>
+
+    <section class="cta-essence reveal">
+
+        <div class="cta-content">
+
+            <h2>
+                Criamos mais do que interfaces.
+                Criamos experiências digitais que evoluem negócios.
+            </h2>
+
+            <p>
+                Cada projeto da MockyCode é construído com estratégia, design e tecnologia,
+                unindo dados, inteligência e criatividade para gerar impacto real no digital.
+            </p>
+
+            <span class="cta-highlight">
+                Design • Tecnologia • Inteligência • Resultados
+            </span>
+
+        </div>
+
+    </section>
+
+    <section class="services">
+
+        <div class="container">
+
+            <!-- TÍTULO -->
+            <div class="section-title">
+                <span class="badge">
+                    <i class="bi bi-stars"></i>
+                    Nossos Serviços
+                </span>
+
+                <h2>
+                    Soluções digitais para levar
+                    sua empresa ao próximo nível.
+                </h2>
+
+                <p>
+                    Criamos experiências digitais modernas,
+                    rápidas e focadas em performance,
+                    desde sites institucionais até sistemas web.
+                </p>
+
+            </div>
+
+            <!-- SERVIÇO 1 -->
+            <article class="service-card">
+
+                <div class="service-content">
+
+                    <span class="service-tag">
+                        <i class="bi bi-window"></i>
+                        Conhecimento e Estratégia
+                    </span>
+
+                    <h3>
+                        Entendemos sua ideia antes de desenvolver qualquer solução.
+                    </h3>
+
+                    <p>
+                        Antes de iniciar qualquer projeto, analisamos seu negócio, identificamos oportunidades e
+                        planejamos uma estratégia personalizada para criar uma solução digital alinhada aos seus
+                        objetivos.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Briefing estratégico.
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Planejamento personalizado.
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Pesquisa e análise.
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Definição da melhor solução.
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-service">
+                        Conhecer Serviço
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-image">
+                    <img src="../../app/assets/images/robo1.png">
+                </div>
+            </article>
+
+            <!-- SERVIÇO 2 -->
+            <article class="service-card reverse">
+
+                <div class="service-image">
+                    <img src="../../app/assets/images/robo3.png">
+                </div>
+
+                <div class="service-content">
+
+                    <span class="service-tag">
+                        <i class="bi bi-layout-text-window"></i>
+                        Design & Tecnologia
+                    </span>
+
+                    <h3>
+                        Transformamos ideias em experiências digitais modernas.
+                    </h3>
+
+                    <p>
+                        Nossa equipe desenvolve interfaces intuitivas, sites, sistemas e soluções digitais com foco em
+                        desempenho, usabilidade e tecnologia de ponta.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Design moderno
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i> Código de qualidade
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i> Responsividade
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Alta performance
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-service">
+                        Conhecer Serviço
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- SERVIÇO 3 -->
+            <article class="service-card">
+                <div class="service-content">
+
+                    <span class="service-tag">
+                        <i class="bi bi-code-square"></i>
+                        Resultados & Crescimento
+                    </span>
+
+                    <h3>
+                        Acompanhamos a evolução do seu projeto continuamente.
+                    </h3>
+
+                    <p>
+                        Após a entrega, continuamos acompanhando métricas, realizando melhorias e garantindo que sua
+                        presença digital continue evoluindo junto com o seu negócio.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i> Otimizações contínuas
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i> Análise de resultados
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i> Crescimento constante
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i> APIs
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-service">
+                        Conhecer Serviço
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-image">
+                    <img src="../../app/assets/images/aperto.png">
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="services-slider">
+
+        <div class="services-header">
+
+            <span class="section-tag">
+                <i class="bi bi-stars"></i>
+                NOSSA ESSÊNCIA
+            </span>
+
+            <h2>
+                O que move a MockyCode.
+            </h2>
+
+            <p>
+                Mais do que criar sites, desenvolvemos experiências digitais
+                que conectam marcas, pessoas e resultados com estratégia,
+                design e tecnologia.
+            </p>
+
+        </div>
+
+        <div class="slider-container">
+            <div class="slide">
+
+                <!-- CARD 1 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-01.jpg')">
+                    <div class="content">
+
+                        <span class="service-category">
+                            Propósito
+                        </span>
+
+                        <h3 class="name">
+                            Transformamos ideias em experiências digitais
+                        </h3>
+
+                        <p class="description">
+                            Cada projeto nasce de um propósito claro: criar soluções digitais que unem estratégia,
+                            design e tecnologia para gerar impacto real.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-02.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Estratégia
+                        </span>
+
+                        <h3 class="name">
+                            Design pensado para gerar resultados
+                        </h3>
+
+                        <p class="description">
+                            Não criamos apenas interfaces bonitas — criamos experiências que guiam o usuário até a ação
+                            com clareza e intenção.
+                        </p>
 
                     </div>
 
                 </div>
+                <!-- CARD 3 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-03.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Tecnologia
+                        </span>
+
+                        <h3 class="name">
+                            Tecnologia que impulsiona negócios
+                        </h3>
+
+                        <p class="description">
+                            Desenvolvemos soluções modernas, rápidas e escaláveis que acompanham o crescimento do seu
+                            negócio no digital.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 4 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-04.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Experiência
+                        </span>
+
+                        <h3 class="name">
+                            UX centrada em pessoas
+                        </h3>
+
+                        <p class="description">
+                            Cada interface é pensada para ser intuitiva, fluida e natural, criando conexões reais entre
+                            marca e usuário.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 5 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-05.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Performance
+                        </span>
+
+                        <h3 class="name">
+                            Sites rápidos e de alta performance
+                        </h3>
+
+                        <p class="description">
+                            Performance não é detalhe — é essencial. Criamos sites otimizados para velocidade, SEO e
+                            melhor experiência possível.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 6 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-08.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Parceria
+                        </span>
+
+                        <h3 class="name">
+                            Mais que clientes, criamos parcerias
+                        </h3>
+
+                        <p class="description">
+                            Trabalhamos lado a lado com nossos clientes, entendendo suas necessidades e construindo
+                            soluções duradouras.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 7 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-07.png')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Inovação
+                        </span>
+
+                        <h3 class="name">
+                            Inovação constante em cada projeto
+                        </h3>
+
+                        <p class="description">
+                            Estamos sempre evoluindo com novas tecnologias, tendências e estratégias para manter nossos
+                            clientes à frente do mercado.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 7 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-09.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">Inteligência</span>
+
+                        <h3 class="name">IA aplicada para acelerar resultados reais</h3>
+
+                        <p class="description">
+                            Usamos inteligência artificial para otimizar processos, gerar insights e apoiar decisões
+                            estratégicas que aumentam performance e eficiência dos projetos.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 8 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-10.jpg')">
+                    <div class="content">
+
+                        <span class="service-category">Dados</span>
+
+                        <h3 class="name">Decisões guiadas por análise de dados</h3>
+
+                        <p class="description">
+                            Analisamos comportamento, métricas e desempenho para transformar dados em estratégias claras
+                            que melhoram conversão e experiência do usuário.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-essence reveal">
+
+        <div class="cta-content">
+
+            <h2>
+                Seu projeto merece mais do que um site.
+                Merece uma solução pensada para crescer.
+            </h2>
+
+            <p>
+                Na MockyCode, cada projeto é desenvolvido com foco em estratégia,
+                performance e inovação, criando experiências digitais que fortalecem
+                marcas, atraem clientes e acompanham a evolução do seu negócio.
+            </p>
+
+            <span class="cta-highlight">
+                Estratégia • Performance • Inovação • Crescimento
+            </span>
+
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <img src="../../app/assets/logo/logo-mockycode.svg" alt="logo-mockycode">
+                <p>Tecnologia Design e inovação para empresas.</p>
+
+                <div id="footer-social-midia">
+                    <a href="https://www.instagram.com/mockycode?igsh=M2VqNDFxdDEwenho" target="_blank"
+                        class="footer-link" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/Brunobarbosa-Tech" target="_blank" class="footer-link" id="github">
+                        <i class="bi bi-github icon-black"></i>
+                    </a>
+
+                    <a href="https://wa.me/5511987100570" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="culture-dots"></div>
+            <ul class="footer-list">
+                <li>
+                    <h3>SERVIÇOS</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desenvolvimento Web</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Landing Pages</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sistemas Web</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Aplicativos Mobile</a>
+                </li>
+            </ul>
 
-        </section>  -->
+            <ul class="footer-list">
+                <li>
+                    <h3>DESIGN</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">UX/UI Design</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Identidade Visual</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Design Gráfico</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Social Media</a>
+                </li>
+            </ul>
 
+            <ul class="footer-list">
+                <li>
+                    <h3>EMPRESA</h3>
+                </li>
+                <li>
+                    <a href="#home" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="footer-link">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="footer-link">Portfólio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer-link">Contato</a>
+                </li>
+            </ul>
+
+
+            <div id="footer-subscribe">
+                <h3>CONTATO</h3>
+
+                <p>Solicite um orçamento e transforme sua ideia em um produto digital.</p>
+
+                <div id="input-group">
+                    <input type="email" id="email" placeholder="Seu melhor e-mail">
+                    <button>
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-copyright">
+            &#169
+            2026 MockyCode — Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div class="chatbot-wrapper">
+
+        <!-- BOTÃO FLUTUANTE -->
+        <button class="chatbot-button" id="chatbotButton">
+
+            <i class="bi bi-chat-dots-fill"></i>
+
+        </button>
+
+        <!-- JANELA -->
+        <div class="chatbot-box" id="chatbotBox">
+
+            <!-- HEADER -->
+            <div class="chatbot-header">
+
+                <div class="chatbot-title">
+
+                    <i class="bi bi-robot"></i>
+                    <span>Assistente MockyIA</span>
+
+                </div>
+
+                <button id="closeChat">
+
+                    <i class="bi bi-x-lg"></i>
+
+                </button>
+
+            </div>
+
+            <!-- MENSAGENS -->
+            <div class="chatbot-messages" id="chatMessages">
+            </div>
+
+            <!-- OPÇÕES DINÂMICAS -->
+            <div class="chat-options" id="chatOptions">
+            </div>
+
+            <!-- RODAPÉ -->
+            <div class="chat-footer" id="chatFooter">
+
+                <button id="restartChat">
+
+                    <i class="bi bi-arrow-clockwise"></i>
+                    Recomeçar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
