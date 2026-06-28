@@ -1,7 +1,3 @@
-// =====================================
-// PARTICLES BACKGROUND
-// =====================================
-
 const canvas = document.getElementById("particles-bg");
 const ctx = canvas.getContext("2d");
 

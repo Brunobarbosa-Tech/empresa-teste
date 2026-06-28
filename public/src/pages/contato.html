@@ -31,9 +31,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="../css/global/reset.css">
+    <link rel="stylesheet" href="../css/views/contato.css">
 
     <script src="../js/components/chtabot-ui.js" defer></script>
     <script src="../js/components/menumobi.js" defer></script>
+    <script src="../js/components/slide.js" defer></script>
+    <script src="../js/components/moleculas.js" defer></script>
 </head>
 
 <body>
@@ -50,8 +53,8 @@
                     <li><a href="../../../index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="servicos.html" class="active">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
 
                 <div class="mobile-actions">
@@ -84,7 +87,369 @@
 
         </nav>
     </header>
+    
+    <canvas id="particles-bg"></canvas>
 
+    <section class="services-slider">
+
+        <div class="services-header">
+
+            <span class="section-tag">
+                <i class="bi bi-stars"></i>
+                NOSSA ESSÊNCIA
+            </span>
+
+            <h2>
+                O que move a MockyCode.
+            </h2>
+
+            <p>
+                Mais do que criar sites, desenvolvemos experiências digitais
+                que conectam marcas, pessoas e resultados com estratégia,
+                design e tecnologia.
+            </p>
+
+        </div>
+
+        <div class="slider-container">
+            <div class="slide">
+
+                <!-- CARD 1 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-01.jpg')">
+                    <div class="content">
+
+                        <span class="service-category">
+                            Propósito
+                        </span>
+
+                        <h3 class="name">
+                            Transformamos ideias em experiências digitais
+                        </h3>
+
+                        <p class="description">
+                            Cada projeto nasce de um propósito claro: criar soluções digitais que unem estratégia,
+                            design e tecnologia para gerar impacto real.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-02.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Estratégia
+                        </span>
+
+                        <h3 class="name">
+                            Design pensado para gerar resultados
+                        </h3>
+
+                        <p class="description">
+                            Não criamos apenas interfaces bonitas — criamos experiências que guiam o usuário até a ação
+                            com clareza e intenção.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 3 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-03.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Tecnologia
+                        </span>
+
+                        <h3 class="name">
+                            Tecnologia que impulsiona negócios
+                        </h3>
+
+                        <p class="description">
+                            Desenvolvemos soluções modernas, rápidas e escaláveis que acompanham o crescimento do seu
+                            negócio no digital.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 4 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-04.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Experiência
+                        </span>
+
+                        <h3 class="name">
+                            UX centrada em pessoas
+                        </h3>
+
+                        <p class="description">
+                            Cada interface é pensada para ser intuitiva, fluida e natural, criando conexões reais entre
+                            marca e usuário.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 5 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-05.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Performance
+                        </span>
+
+                        <h3 class="name">
+                            Sites rápidos e de alta performance
+                        </h3>
+
+                        <p class="description">
+                            Performance não é detalhe — é essencial. Criamos sites otimizados para velocidade, SEO e
+                            melhor experiência possível.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 6 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-08.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Parceria
+                        </span>
+
+                        <h3 class="name">
+                            Mais que clientes, criamos parcerias
+                        </h3>
+
+                        <p class="description">
+                            Trabalhamos lado a lado com nossos clientes, entendendo suas necessidades e construindo
+                            soluções duradouras.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 7 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-07.png')">
+
+                    <div class="content">
+
+                        <span class="service-category">
+                            Inovação
+                        </span>
+
+                        <h3 class="name">
+                            Inovação constante em cada projeto
+                        </h3>
+
+                        <p class="description">
+                            Estamos sempre evoluindo com novas tecnologias, tendências e estratégias para manter nossos
+                            clientes à frente do mercado.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 7 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-09.jpg')">
+
+                    <div class="content">
+
+                        <span class="service-category">Inteligência</span>
+
+                        <h3 class="name">IA aplicada para acelerar resultados reais</h3>
+
+                        <p class="description">
+                            Usamos inteligência artificial para otimizar processos, gerar insights e apoiar decisões
+                            estratégicas que aumentam performance e eficiência dos projetos.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- CARD 8 -->
+                <div class="item" style="background-image:url('../../app/assets/card-img/cultura-10.jpg')">
+                    <div class="content">
+
+                        <span class="service-category">Dados</span>
+
+                        <h3 class="name">Decisões guiadas por análise de dados</h3>
+
+                        <p class="description">
+                            Analisamos comportamento, métricas e desempenho para transformar dados em estratégias claras
+                            que melhoram conversão e experiência do usuário.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <sectction class="page-title">
+        <span class="section-tag">
+            <i class="bi bi-stars"></i>
+            CONTATOS
+        </span>
+
+        <h1>
+            Nossos contatos
+        </h1>
+        <p>
+            Tem um projeto em mente ou precisa de uma solução sob
+            medida? Nossa equipe está pronta para ajudar você a
+            dar o proximo passo com criatividade, agilidade e foco
+            nos resultados. Vamos transformar suas ideias em
+            realidade!
+        </p>
+    </sectction>
+
+    <main id="main-container">
+        <section id="contacts-container">
+            <h3>
+                Entre em contanto
+            </h3>
+            <p>
+                Preencha o formulario ao lado e entraremos em contanto
+                com você o mais rapido possivel.
+            </p>
+            <div id="cards-container">
+                <a href="tel:+5511993838383" target="_blank" class="contact-card phone">
+
+                    <div class="card-icon">
+                        <i class="bi bi-telephone-plus"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <p>
+                            Telefone
+                        </p>
+                        <span>
+                            (55) 99383-8383
+                        </span>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank" class="contact-card location">
+
+                    <div class="card-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <p>
+                            Localização
+                        </p>
+                        <span>
+                            Rua exemplo, 232 - Bairro exemplo, cidade - estado.
+                        </span>
+                    </div>
+                </a>
+
+                <a href="mailton:teste@teste.com.br" target="_blank" class="contact-card email">
+
+                    <div class="card-icon">
+                        <i class="bi bi-envelope-at"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <p>
+                            E-mail
+                        </p>
+                        <span>
+                            teste@teste.com.br
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=" target="_blank" class="contact-card whatsapp">
+
+                    <div class="card-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <p>
+                            WhatsApp
+                        </p>
+                        <span>
+                            (55) 99383-8383
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <h4>
+                Nos siga nas redes sociais
+            </h4>
+
+            <div class="social-media-icons">
+                <a href="#" class="icon-link instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" class="icon-link linkedin">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#" class="icon-link github">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="#" class="icon-link treads">
+                    <i class="bi bi-threads"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact-form-container">
+            <h3>
+                Contatar
+            </h3>
+            <form method="post" id="contact-form">
+                <div class="input-group">
+                    <label for="name">
+                        Nome
+                    </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="name">
+                        E-mail
+                    </label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">
+                        Assunto
+                    </label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">
+                        Mensagem
+                    </label>
+                    <textarea name="message" id="message" required rows="5"></textarea>
+                </div>
+
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
+            </form>
+        </section>
+    </main>
 
     <footer id="contact">
         <div id="footer-content">
