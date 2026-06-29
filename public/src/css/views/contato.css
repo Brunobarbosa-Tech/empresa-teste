@@ -200,7 +200,7 @@
 #main-container {
     position: relative;
     display: flex;
-    gap: 60px;
+    gap: 300px;
     width: min(1400px, 92%);
     margin: auto;
     margin-bottom: 90px;
